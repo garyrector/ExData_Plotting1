@@ -1,4 +1,5 @@
 ### plot3.R 
+if (!exists("getandprep")) source("getandprep.R")
 getandprep()
 
 png(filename="plot3.png",width=480,height=480)

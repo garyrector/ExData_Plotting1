@@ -1,4 +1,5 @@
 ### plot2.R 
+if (!exists("getandprep")) source("getandprep.R")
 getandprep()
 
 png(filename="plot2.png",width=480,height=480)

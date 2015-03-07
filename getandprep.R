@@ -8,7 +8,7 @@ getandprep <- function() {
     
     if (!exists("hpc")){
         ### install dplyr package and library if needed
-        if (!"dplyer" %in% installed.packages()) install.packages("dplyr")
+        if (!"dplyr" %in% rownames(installed.packages())) install.packages("dplyr")
         library(dplyr)
     
         ### download dataset zip file and unzip it

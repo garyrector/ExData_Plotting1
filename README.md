@@ -16,10 +16,11 @@ The plotx.R files may be executed in any order; getandprep will recognize if the
 prepared by the existence of hpc, so downloading and data preparation will only happen once, 
 prior to outputting the first plot. This way, subsequent plots execute very fast.
 
-After execution of plots, the objects remaining in the environment are the hpc dataset of 2880 observations 
-and the getandprep function.
+After execution of plots, the objects remaining in the environment are the 
+hpc dataset of 2880 observations of 8 variables and the getandprep function.
 
-To run these scripts, it is only necessary to source plot1.R through plot4.R in any order.
+To run these scripts, it is only necessary to copy the 5 R scripts to the working directory 
+and then source plot1.R through plot4.R in any order.
 
 ## Introduction
 
