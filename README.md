@@ -1,27 +1,34 @@
-## Project Submission Notes from Gary Rector
+## Project Submission Notes 
 
-Contained here are four R scripts (plot1.R : plot4.R) and four png files (plot1.png : plot4.png) 
+###Contents: 
+Four R scripts (plot1.R : plot4.R) and four png files (plot1.png : plot4.png) 
 that are the corresponding outputs of the plotx.R scripts.
 
-In addition, a fifth R script (getandprep.R) is included, which downloads and prepares the data for plotting.
+*In addition, a fifth R script (getandprep.R) is included.* This downloads and prepares the data for plotting.
 Each plotx.R script calls getandprep and then creates the plot per the requirements below. 
-The downloaded zip file, unzipped txt file, tidy dataset, and output plots will be created in the working directory.
 
+###Required packages:
 The dplyr package and library will be installed and loaded prior to data preparation if it is not present.
+
+###Assumptions:
+**_The "hpc" variable name should not exist prior to running any of these scripts._**
 A global variable called "hpc" (for "household power consumption") is created to contain the tidy dataset. 
 
-THE "hpc" VARIABLE NAME SHOULD NOT EXIST PRIOR TO RUNNING ANY OF THESE SCRIPTS.
-
-The plotx.R files may be executed in any order; getandprep will recognize if the data has already been 
-prepared by the existence of hpc, so downloading and data preparation will only happen once, 
-prior to outputting the first plot. This way, subsequent plots execute very fast.
-
-After execution of plots, the objects remaining in the environment are the 
-hpc dataset of 2880 observations of 8 variables and the getandprep function.
-
+###Running the code:
 To run these scripts, it is only necessary to copy the 5 R scripts to the working directory 
 and then source plot1.R through plot4.R in any order.
 
+The plotx.R files may be executed in any order. getandprep will recognize if the data has already been 
+prepared by the existence of hpc, so downloading and data preparation will only happen once, 
+prior to outputting the first plot. This way, subsequent plots execute very fast.
+
+###Output results:
+The downloaded zip file, unzipped txt file, tidy dataset, and output plots will be created in the working directory.
+After execution of plots, the objects remaining in the environment are the 
+hpc dataset of 2880 observations of 8 variables and the getandprep function.
+
+
+### Original README follows:
 ## Introduction
 
 This assignment uses data from
